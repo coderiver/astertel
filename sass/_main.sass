@@ -1,2 +1,157 @@
 // Normally mainpage styles
- 
+%in
+	width: 990px
+	margin: 0 auto
+	+clr
+.l
+	+clr
+	.l-sidebar
+		width: 372px 
+		float: left
+	.l-content
+		width: 610px 
+		float: right
+
+.header
+	.header__in
+		@extend %in
+		height: 272px 
+		position: relative
+	.header__logo
+		position: absolute
+		left: 15px 
+		bottom: 71px 
+		text-decoration: none
+		i
+			+hide-text
+			+s(logo)
+			display: inline-block
+			vertical-align: baseline
+		span
+			font-size: 12px 
+			color: #919495
+			position: absolute
+			left: 190px 
+			bottom: -2px
+			white-space: nowrap 
+	.header__skype,.header__email,.header__phone
+		font-size: 16px 
+		color: #696969 
+		position: absolute
+		top: 50px 
+		line-height: 1.1 
+		a
+			color: #696969
+			text-decoration: none  
+	.header__skype
+		width: 93px 
+		right: 0 
+		i
+			+s(skype)
+			position: absolute
+			left: -20px 
+			top: 2px 
+	.header__phone
+		left: 385px 
+		i
+			+s(phone)
+			left: -20px 
+			top: 2px
+			position: absolute
+	.header__email
+		left: 615px 
+		i
+			+s(mail)
+			left: -23px 
+			top: 3px
+			position: absolute
+	.nav
+		position: absolute
+		left: 385px 
+		bottom: 61px 
+		list-style: none
+		width: 610px 
+		li
+			float: left
+		.nav__login
+			position: absolute
+			right: 0
+		a
+			font-size: 16px 
+			color: #7CA6BB
+			padding: 10px 22px
+			text-decoration: none
+			float: left
+			&.is-active
+				background: #F7B431
+				color: #fff  
+
+.why
+	background: #DDE8EB 
+	padding: 30px 0 
+	.why__in
+		@extend %in
+	.why__title
+		font-size: 60px 
+		color: #696969
+		font-weight: normal
+		text-align: center 
+		margin-bottom: 26px 
+	ul
+		list-style: none
+		+clr
+		li
+			float: left
+			color: #696969
+			margin-bottom: 27px 
+			width: 25%
+			padding-right: 6%
+			padding-left: 2%   
+			h3
+				font-size: 16px 
+				font-weight: bold
+				margin-bottom: 5px 
+
+.banner
+	padding: 61px 0
+	background: #fff  
+	text-align: center
+	.banner__in
+		@extend %in
+
+.content
+	padding: 30px 0 
+	.content__in
+		@extend %in
+.subnav
+	font-size: 16px 
+	list-style: none
+	margin-right: 120px 
+	line-height: 1.15 
+	a
+		color: #7CA6BB
+		text-decoration: none
+		display: block 
+		padding: 8px 16px 
+		&.is-active
+			color: #fff 
+			background: #EEAE2F 
+.text
+	font-size: 12px 
+	line-height: 1.3 
+	h2
+		font-size: 28px 
+		color: #000000
+		font-weight: normal
+		margin-bottom: .7em  
+	p
+		margin-bottom: 1em 
+.footer
+	padding: 30px 0 
+	.footer__in
+		@extend %in
+	.footer__logo
+		+hide-text
+		+s(flogo)
+		opacity: .3 
+		
